@@ -18,24 +18,9 @@
     </head>
 
     <body>
-
-        <!--
-          {
-            "webTitle": "Rochdale taxi firm admits providing white drivers on request",
-            "webPublicationDate": "2014-10-21T18:18:21Z",
-            "sectionName": "UK news",
-            "sectionId": "uk-news",
-            "id": "uk-news/2014/oct/21/rochdale-taxi-firm-white-drivers-on-request",
-            "fields": {
-              "trailText": "Car 2000 minicab company, which serves area where Asian grooming gangs have operated, says it is catering to demand"
-            },
-            "webUrl": "http://www.theguardian.com/uk-news/2014/oct/21/rochdale-taxi-firm-white-drivers-on-request",
-            "apiUrl": "http://content.guardianapis.com/uk-news/2014/oct/21/rochdale-taxi-firm-white-drivers-on-request"
-          }
-        -->
         
         <!--
-        The templates below are a fallback for users with no Javascript enabled.
+        The code below is a fallback for users with no Javascript enabled.
         With server side templating, they can be unified with the Angular component templates
         and include the news as provided by the backend.
         -->
@@ -45,7 +30,7 @@
                 <li class="tab">
                     <a class="tab-trigger zone-news"
                        href="/news/uk-news"
-                       tg-tab-trigger="uk-news">
+                       ng-click="openTab('uk-news')">
                         UK News
                     </a>
                 </li>
@@ -53,7 +38,7 @@
                 <li class="tab">
                     <a class="tab-trigger zone-sports"
                        href="/news/football"
-                       tg-tab-trigger="football">
+                       ng-click="openTab('football')">
                         Football
                     </a>
                 </li>
@@ -61,16 +46,16 @@
                 <li class="tab">
                     <a class="tab-trigger zone-travel"
                        href="/news/travel"
-                       tg-tab-trigger="travel">
+                       ng-click="openTab('travel')">
                         Travel
                     </a>
                 </li>
             </ul>
             
             <section class="news"
-                     aria-live="polite"
-                     tg-news>
-                <ol class="news-list">
+                     aria-live="polite">
+                <ol class="tg-news-list"
+                    tg-news>
                     <li class="headline-content">
                         <article class="headline">
                             <header>
@@ -85,7 +70,9 @@
                                 </time>
                             </header>
                             
-                            Car 2000 minicab company, which serves area where Asian grooming gangs have operated, says it is catering to demand.
+                            <div class="content">
+                                Car 2000 minicab company, which serves area where Asian grooming gangs have operated, says it is catering to demand.
+                            </div>
                         </article>
                     </li>
                     
@@ -103,7 +90,9 @@
                                 </time>
                             </header>
                             
-                            Car 2000 minicab company, which serves area where Asian grooming gangs have operated, says it is catering to demand.
+                            <div class="content">
+                                Car 2000 minicab company, which serves area where Asian grooming gangs have operated, says it is catering to demand.
+                            </div>
                         </article>
                     </li>
                     
@@ -121,7 +110,28 @@
                                 </time>
                             </header>
                             
-                            Car 2000 minicab company, which serves area where Asian grooming gangs have operated, says it is catering to demand.
+                            <div class="content">
+                                Car 2000 minicab company, which serves area where Asian grooming gangs have operated, says it is catering to demand.
+                            </div>
+                        </article>
+                    </li>
+                    
+                    <li class="headline-content">
+                        <article class="headline">
+                            <header>
+                                <h1>
+                                    <a href="http://www.theguardian.com/uk-news/2014/oct/21/rochdale-taxi-firm-white-drivers-on-request">
+                                        Rochdale taxi firm admits providing white drivers on request
+                                    </a>
+                                </h1>
+                                
+                                <time pubdate datetime="21-10-2014">
+                                    21-10-2014
+                                </time>
+                            </header>
+                            <div class="content">
+                                Car 2000 minicab company, which serves area where Asian grooming gangs have operated, says it is catering to demand.
+                            </div>
                         </article>
                     </li>
                     
@@ -139,25 +149,9 @@
                                 </time>
                             </header>
                             
-                            Car 2000 minicab company, which serves area where Asian grooming gangs have operated, says it is catering to demand.
-                        </article>
-                    </li>
-                    
-                    <li class="headline-content">
-                        <article class="headline">
-                            <header>
-                                <h1>
-                                    <a href="http://www.theguardian.com/uk-news/2014/oct/21/rochdale-taxi-firm-white-drivers-on-request">
-                                        Rochdale taxi firm admits providing white drivers on request
-                                    </a>
-                                </h1>
-                                
-                                <time pubdate datetime="21-10-2014">
-                                    21-10-2014
-                                </time>
-                            </header>
-                            
-                            Car 2000 minicab company, which serves area where Asian grooming gangs have operated, says it is catering to demand.
+                            <div class="content">
+                                Car 2000 minicab company, which serves area where Asian grooming gangs have operated, says it is catering to demand.
+                            </div>
                         </article>
                     </li>
                 </ol>

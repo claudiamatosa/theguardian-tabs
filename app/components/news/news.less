@@ -1,1 +1,45 @@
 @import "../../less-atoms/main";
+
+.tg-news-list {
+    padding: 0;
+    
+    .headline-content {
+        padding: 15px;
+        border-bottom: @grey-light 1px solid;
+        list-style-position: inside;
+        
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    
+    .headline {
+        header {
+            h1 {
+                font-size: 15px;
+                margin-bottom: 5px;
+            }
+        }
+        
+        .content {
+            margin-top: 15px;
+        }
+        
+        @media(@sm) {
+            header, .content {
+                display: inline-block;
+                padding: 15px;
+                vertical-align: middle;
+            }
+            
+            header {
+                width: 30%;
+            }
+            
+            .content {
+                border-left: @grey-light 1px solid;
+                width: 60%;
+            }
+        }
+    }
+}

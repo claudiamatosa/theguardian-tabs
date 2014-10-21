@@ -82,4 +82,6 @@ available to finish them at any time, or explain how they would be done.
 - Minify css and javascript into one (maybe using cssmin and uglify)
 - Document
 - Test
+- Adjust media query breakpoints and some styling
+- Extract some configurations hard coded in the templates
 

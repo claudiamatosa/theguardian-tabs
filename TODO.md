@@ -1,4 +1,4 @@
-# TODO
+# DONE
 
 1. Scaffold initial html and css
 2. Include static tabs and news for disabled javascript
@@ -14,4 +14,6 @@ to less atoms
 category
 11. Display the news in the view, using the news component (must display webTitle and
 trailText fields, and webTitle must link to webUrl)
-100. Quick browser testing
+
+# TODO
+12. Quick browser testing

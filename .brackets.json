@@ -1,0 +1,7 @@
+{
+    "jscodehints.detectedExclusions": [
+        "/media/dados/Projectos/Job Tests/the-guardian-tabs/app/components/tabs/tabs.js",
+        "/media/dados/Projectos/Job Tests/the-guardian-tabs/app/components/tabs/tabs-directive.js",
+        "/media/dados/Projectos/Job Tests/the-guardian-tabs/karma.conf.js"
+    ]
+}
