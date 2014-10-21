@@ -16,4 +16,11 @@ category
 trailText fields, and webTitle must link to webUrl)
 
 # TODO
-12. Quick browser testing
+- Browser testing
+- Having links for tabs, if appropriate. Angular-route could be used for it.
+- Minify css and javascript into one (maybe using cssmin and uglify)
+- Document
+- Test
+- Adjust media query breakpoints and some styling
+- Extract some configurations hard coded in the templates
+- Remove page flickering when replacing the regular content with Angular directives

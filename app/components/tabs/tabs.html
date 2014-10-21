@@ -3,7 +3,8 @@
     <li class="tab"
         ng-repeat="tab in tabs">
         <button class="tab-trigger zone-{{ tab.zone }}"
-                ng-click="openTab(tab.id)">
+                ng-click="openTab(tab.id)"
+                ng-class="{active: activeTab === tab.id}">
             {{ tab.name }}
         </button>
     </li>

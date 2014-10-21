@@ -57,6 +57,8 @@ angular.module('theGuardianTabsApp.tabs.tabs-controller', [])
                 
         $scope.openTab = function (section) {
             tabsController.fetchNews(section);
+            
+            $scope.activeTab = section;
         };
         
         /**
