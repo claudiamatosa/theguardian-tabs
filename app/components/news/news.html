@@ -10,8 +10,8 @@
                     </a>
                 </h1>
 
-                <time pubdate datetime="{{ article.webPublicationDate }}">
-                    {{ article.webPublicationDate }}
+                <time pubdate datetime="{{ article.webPublicationDate | date: 'dd-MM-yyyy HH:mm' }}">
+                    {{ article.webPublicationDate | date: 'dd-MM-yyyy HH:mm' }}
                 </time>
             </header>
 
