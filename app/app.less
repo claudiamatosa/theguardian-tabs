@@ -2,5 +2,22 @@
 
 /* app css stylesheet */
 body {
+    .font-guardian-egyptian-text();
+    color: @grey-dark;
+    font-size: 13px;
+}
 
+h1, h2, h3 {
+    .font-guardian-egyptian-headline();
+}
+
+a {
+    &:link, &:visited {
+        color: @grey-dark;
+        text-decoration: none;
+    }
+    
+    &:hover {
+        color: @black;
+    }
 }
