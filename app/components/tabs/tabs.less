@@ -1,6 +1,35 @@
 @import "../../less-atoms/main";
 
 .tg-tabs {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+    .tab {
+        color: @white;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        
+        @media(@sm) {
+            width: 33%;
+        }
+    }
+    
+    .tab-trigger {
+        color: @white;
+        display: block;
+        font-size: 15px;
+        padding: 20px;
+        width: 100%;
+        
+        &:hover, &:active, &.active {
+            background-color: @grey-dark;
+        }
+    }
+    
     /* TODO: Create a hash with colors and extract a common function for this */
     .zone-news {
         background-color: @red;

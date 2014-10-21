@@ -50,6 +50,7 @@ This said, the structure of the final app is:
     |   + layout
     |   |   _fonts.less
     |   |   _colours.less
+    |   |   _media-queries.less
     |   + vendor
     |   |   _lesshat.less
     |   main.less
@@ -66,11 +67,6 @@ This said, the structure of the final app is:
     |   |   news-directive.js
     |   |   news.html
     |   |   news.less
-    + images
-    |   logo.png
-    |   logo@2x.png
-    |   logo-mobile.png
-    |   logo-mobile@2x.png
     app.js
     app.less
     index.html

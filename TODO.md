@@ -7,7 +7,6 @@ to less atoms
 4. Add styles to tabs, news and headlines
 5. Style header with logo (mobile first)
 6. Scaffold modules
-7. Import modules in app.js
 8. Configure news-service with API calls to The Guardian API, with promises
 9. Set tab list in headlines controller and pass it to the tabs directive
 (UK news, Football and Travel)

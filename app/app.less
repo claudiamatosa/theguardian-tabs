@@ -1,10 +1,13 @@
 @import "less-atoms/main";
 
-/* app css stylesheet */
 body {
     .font-guardian-egyptian-text();
     color: @grey-dark;
     font-size: 13px;
+    
+    * {
+        .box-sizing(border-box);
+    }
 }
 
 h1, h2, h3 {
