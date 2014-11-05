@@ -1,6 +1,7 @@
-<ol class="tg-news-list">
+<ol class="tg-news-list"
+    ng-controller="NewsCtrl as news">
     <li class="headline-content"
-        ng-repeat="article in news|limitTo:10"
+        ng-repeat="article in news.articles"
         ng-cloak>
         <article class="headline">
             <header>
@@ -20,8 +21,19 @@
             </div>
         </article>
     </li>
+
     <li class="headline-content"
-        ng-hide="news.length">
+        ng-hide="news.tabsLoaded">
+        Tab content is loading...
+    </li>
+   
+    <li class="headline-content"
+        ng-if="!news.articles.length && news.tabsLoaded">
         No content for this category is available at the moment.
+    </li>
+    
+    <li class="headline-content"
+        ng-if="news.errorMessage">
+        There was an error while attempting to fetch the headlines. Please try again later.
     </li>
 </ol>

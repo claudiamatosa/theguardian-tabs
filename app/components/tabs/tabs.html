@@ -1,10 +1,10 @@
 <ul class="tg-tabs"
-    ng-controller="TabsCtrl">
+    ng-controller="TabsCtrl as tabs">
     <li class="tab"
-        ng-repeat="tab in tabs">
+        ng-repeat="tab in tabs.tabs">
         <button class="tab-trigger zone-{{ tab.zone }}"
-                ng-click="openTab(tab.id)"
-                ng-class="{active: activeTab === tab.id}">
+                ng-click="tabs.openTab(tab)"
+                ng-class="{active: tabs.activeTab === tab.id}">
             {{ tab.name }}
         </button>
     </li>

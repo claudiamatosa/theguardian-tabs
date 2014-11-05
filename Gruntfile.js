@@ -46,15 +46,16 @@ module.exports = function(grunt) {
         clean: ['dist']
     });
 
-    grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-contrib-less');
-    grunt.loadNpmTasks('grunt-contrib-connect');
+    require('load-grunt-tasks')(grunt);
 
-    grunt.registerTask('default', [
+    grunt.registerTask('build', [
         'clean',
         'less',
-        'copy',
+        'copy'
+    ]);
+    
+    grunt.registerTask('default', [
+        'build',
         'connect'
     ]);
 

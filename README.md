@@ -2,6 +2,8 @@
 
 This project aims to display a list of tabs with news from The Guardian API.
 
+[![Build Status](https://travis-ci.org/claudiamatosa/theguardian-tabs.svg?branch=master)](https://travis-ci.org/claudiamatosa/theguardian-tabs)
+
 ## Runing the project
 
 The code can be viewed under `http://claudiamatosa.com/code/theguardian-tabs`.
@@ -10,15 +12,24 @@ The code can be viewed under `http://claudiamatosa.com/code/theguardian-tabs`.
 
 Install nodeJS, then run, from the root directory:
 
-    npm install -g bower grunt-cli
-    npm install
-    bower install
-    grunt connect
+    npm start
 
-Grunt will build the less files with the rest of the app into `dist` and run a local
+NPM will build the less files with the rest of the app into `dist` and run a local
 server from there.
 
-If everything has worked successfully, navigate to http://localhost:9001.
+If everything has worked successfully, navigate to http://localhost:8000.
+
+## Testing
+
+This app supports unit and end-to-end tests, using Jasmine and Protractor.
+
+To run the unit tests (currently none):
+
+    karma start
+    
+To run the end-to-end tests:
+    
+    npm run protractor
 
 ## Tools used
 

@@ -2,13 +2,14 @@
 
 angular.module('theGuardianTabsApp.news.news-service', [])
 
-	.factory('newsProvider', ['$http', function($http) {
+	.factory('headlinesAPI', ['$http', function($http) {
 	
-        return function (section) {
+        return function (section, limit) {
             var data = {
                 'api-key': 'test',
                 'show-fields': 'webTitle,trailText,webUrl,webPublicationDate',
-                'section': section
+                'section': section,
+                'page-size': limit
             };
 
             return $http({
