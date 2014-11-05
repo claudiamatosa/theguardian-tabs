@@ -14,7 +14,7 @@ Install nodeJS, then run, from the root directory:
 
     npm start
 
-NPM will build the less files with the rest of the app into `dist` and run a local
+Grunt will build the LESS files with the rest of the app into `dist` and npm will run a local
 server from there.
 
 If everything has worked successfully, navigate to http://localhost:8000.
