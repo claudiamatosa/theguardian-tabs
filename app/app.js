@@ -4,6 +4,7 @@
  * Declare app level module which depends on views, and components
  */
 angular.module('theGuardianTabsApp', [
-  'theGuardianTabsApp.news',
-  'theGuardianTabsApp.tabs'
+    'ngSanitize',
+    'theGuardianTabsApp.news',
+    'theGuardianTabsApp.tabs'
 ]);

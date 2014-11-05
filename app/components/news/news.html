@@ -16,8 +16,8 @@
                 </time>
             </header>
 
-            <div class="content">
-                {{ article.fields.trailText }}
+            <div class="content"
+                 ng-bind-html="article.fields.trailText">
             </div>
         </article>
     </li>
