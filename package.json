@@ -20,10 +20,10 @@
     "grunt-cli": "~0.1.13"
   },
   "scripts": {
-    "postinstall": "bower install; grunt build;",
-    "prestart": "npm install",
+    "postinstall": "bower install",
+    "prestart": "npm install; grunt build;",
     "start": "http-server ./dist -a localhost -p 8000 -c-1",
-    "pretest": "npm install",
+    "pretest": "npm install; grunt build;",
     "update": "grunt build",
     "test": "karma start karma.conf.js",
     "test-single-run": "karma start karma.conf.js  --single-run",
