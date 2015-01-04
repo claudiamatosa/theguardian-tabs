@@ -6,7 +6,7 @@ angular.module('theGuardianTabsApp.news.news-service', [])
 	
         return function (section, limit) {
             var data = {
-                'api-key': 'test',
+                'api-key': ${apiKey},
                 'show-fields': 'webTitle,trailText,webUrl,webPublicationDate',
                 'section': section,
                 'page-size': limit
