@@ -4,10 +4,6 @@ This project aims to display a list of tabs with news from The Guardian API.
 
 [![Build Status](https://travis-ci.org/claudiamatosa/theguardian-tabs.svg?branch=master)](https://travis-ci.org/claudiamatosa/theguardian-tabs)
 
-## Runing the project
-
-The code can be viewed under `http://claudiamatosa.com/code/theguardian-tabs`.
-
 ### To run locally
 
 Install nodeJS, then run, from the root directory:
